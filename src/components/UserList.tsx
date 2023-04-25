@@ -14,9 +14,9 @@ export const UserList: FC<Props> = ({ handleChangeSort, deleteUser, users, showC
             <thead>
                 <tr>
                     <th >Foto</th>
-                    <th onClick={() => { handleChangeSort(Sortby.Name) }}>Nombre</th>
-                    <th onClick={() => { handleChangeSort(Sortby.Last) }}>Apellido</th>
-                    <th onClick={() => { handleChangeSort(Sortby.Country) }}>País</th>
+                    <th className='pointer' onClick={() => { handleChangeSort(Sortby.Name) }}>Nombre</th>
+                    <th className='pointer' onClick={() => { handleChangeSort(Sortby.Last) }}>Apellido</th>
+                    <th className='pointer' onClick={() => { handleChangeSort(Sortby.Country) }}>País</th>
                     <th >Acciones</th>
                 </tr>
             </thead>
